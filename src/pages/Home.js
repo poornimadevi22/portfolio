@@ -79,15 +79,40 @@ const Home = () => {
     const sampleProjects = [
         {
             _id: '1',
-            title: 'Personal Portfolio Website',
+            title: 'Foodies webpage',
             description: 'A responsive personal portfolio website showcasing my skills, projects, and contact information. Built with React and CSS.',
-            link: 'https://yourportfolio.com'
+            link: 'https://silver-peony-c83679.netlify.app/',
+            // link:'https://foodies-webpage.onrender.com'
+        },
+        {
+            _id: '2',
+            title: 'Login/Registration with Authentication',
+            description: 'Manage your shopping items efficiently with our Redux-powered cart system. Built with MERN stack.',
+            link: 'https://github.com/poornimadevi22/express-JWTauth'
+        },
+        {
+            _id: '3',
+            title: 'Book Management System',
+            description: 'This repository houses a Book Management System, employing CRUD operations for efficient handling of book data. ',
+            link: 'https://github.com/poornimadevi22/BookManagementSystem/tree/main'
+        },
+        {
+            _id: '4',
+            title: 'Todo list Application',
+            description: 'A simple list app to keep you organized and productive.',
+            link: 'https://calm-platypus-a3b344.netlify.app/'
+        },
+        {
+            _id: '5',
+            title: 'Creative registration form',
+            description: 'A creative form built with responsive design.',
+            link: 'https://cozy-squirrel-4cafda.netlify.app/'
         }
     ];
 
     const technicalSkills = [
         { skill: 'JavaScript', rating: 5, icon: faJs },
-        { skill: 'React', rating: 4, icon: faReact },
+        { skill: 'React', rating: 5, icon: faReact },
         { skill: 'Node.js', rating: 4, icon: faNodeJs },
         { skill: 'MongoDB', rating: 3, icon: faDatabase },
         { skill: 'CSS', rating: 4, icon: faCss3Alt },
@@ -97,8 +122,8 @@ const Home = () => {
     const professionalSkills = [
         { skill: 'Communication', rating: 5, icon: faComments },
         { skill: 'Problem-Solving', rating: 5, icon: faPuzzlePiece },
-        { skill: 'Teamwork', rating: 4, icon: faUsers },
-        { skill: 'Time Management', rating: 4, icon: faClock },
+        { skill: 'Teamwork', rating: 5, icon: faUsers },
+        { skill: 'Creativity', rating: 4, icon: faClock },
     ];
 
     const renderSkills = (skills) => skills.map(({ skill, rating, icon }) => (
@@ -116,10 +141,11 @@ const Home = () => {
         <div>
             <SectionBackground bgGradient="linear-gradient(135deg, #72EDF2 10%, #5151E5 100%)" color="#fff" id="home">
                 <Section>
-                    <ProfileImage src="https://via.placeholder.com/150" alt="Profile" />
+                    <ProfileImage src="WhatsApp Image 2024-07-14 at 23.45.18_8d1513a9.jpg" alt="Profile" />
                     <IntroText>
-                        Hi, I'm <Typed strings={['a Full Stack Developer', 'a Problem Solver', 'a Lifelong Learner']} typeSpeed={40} backSpeed={50} loop />
-                    </IntroText>
+                        
+                         Poorni Suresh,<br /> I'm <Typed strings={['a Full Stack Developer','both FrontEnd and Backend Developer', 'a Problem Solver', 'a Lifelong Learner']} typeSpeed={40} backSpeed={50} loop />
+                         </IntroText>
                 </Section>
             </SectionBackground>
             <SectionBackground bgGradient="linear-gradient(135deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%)" color="#000" id="about">
@@ -127,7 +153,13 @@ const Home = () => {
                     <h1>About Me</h1>
                     <p>
                         I am a passionate Full Stack Developer with experience in building web applications using modern technologies.
-                        I love solving complex problems and continuously improving my skills. My goal is to create scalable and efficient applications.
+                        I love solving complex problems and continuously improving my skills. My goal is to create scalable and efficient applications.Dedicated and motivated professional with a background in optometry, aiming to pivot into a software
+                developer role with a focus on JavaScript and web development.
+                am looking for a challenging and dynamic environment where I can leverage my skills and expertise to
+                contribute to innovative projects. I am particularly interested in a role that allows me to work on
+                end-to-end development using the MERN stack, as I thrive in creating seamless and responsive
+                applications.
+                
                     </p>
                 </Section>
             </SectionBackground>
@@ -147,7 +179,7 @@ const Home = () => {
                     </SkillsContainer>
                 </Section>
             </SectionBackground>
-            <SectionBackground bgGradient="linear-gradient(135deg, #FFD3A5 10%, #FD6585 100%)" color="#fff" id="projects">
+            <SectionBackground bgGradient="linear-gradient(135deg, #FFD3A5 10%, #FD6585 100%)" id="projects">
                 <Section>
                     <h1>Projects</h1>
                     <ProjectsContainer>
@@ -166,10 +198,10 @@ const Home = () => {
                     <h1>Contact Me</h1>
                     <ContactContainer>
                         <ContactItem>
-                            <Icon icon={faEnvelope} /> myemail@example.com
+                            <Icon icon={faEnvelope} />poorni.jerry22@gmail.com
                         </ContactItem>
                         <ContactItem>
-                            <Icon icon={faPhone} /> +123 456 7890
+                            <Icon icon={faPhone} /> 9498499683
                         </ContactItem>
                     </ContactContainer>
                 </Section>
